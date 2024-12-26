@@ -1,0 +1,42 @@
+{
+  "wallet": {
+    "address": "your-wallet-address-here",
+    "privateKey": "your-private-key-here"
+  },
+  "tradingPreferences": {
+    "pumpDetection": {
+      "enabled": true,
+      "criteria": {
+        "volumeIncrease": 20,
+        "priceChange": 10
+      }
+    },
+    "sniperBot": {
+      "enabled": true,
+      "criteria": {
+        "maxBuyPrice": 5,
+        "targetTokens": ["SOL", "USDC"]
+      }
+    },
+    "yieldFarming": {
+      "enabled": true,
+      "pools": [
+        {
+          "name": "SOL-USDC",
+          "allocation": 50
+        },
+        {
+          "name": "SOL-RAY",
+          "allocation": 50
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "port": 3000
+  },
+  "logging": {
+    "level": "info",
+    "file": "logs/bot.log"
+  }
+}
