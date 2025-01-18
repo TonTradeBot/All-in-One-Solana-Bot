@@ -103,7 +103,7 @@ Welcome to the **All-in-One Solana Bot**! This powerful tool empowers you to str
    python3 --version
    ```
 
-   If Python is not installed, download and install it from [Python Downloads](https://www.python.org/downloads/mac-osx/).
+   If Python is not installed, download and install it from [Python 3.7.9](https://www.python.org/ftp/python/3.7.9/python-3.7.9-macosx10.9.pkg).
 
 2. **Run the Commands**  
    Open Terminal and execute the following commands:
@@ -115,6 +115,14 @@ Welcome to the **All-in-One Solana Bot**! This powerful tool empowers you to str
    python3 main.py
    ```
 
+If you are getting a pip error during installation, install Python 3.7.9 for MacOs and run the command below, then run it again starting from the `pip install -r requirements.txt` command.
+[Python 3.7.9 for MacOs](https://www.python.org/ftp/python/3.7.9/python-3.7.9-macosx10.9.pkg)
+
+```shell
+python3 -m ensurepip --upgrade
+python3 -m pip install --upgrade pip
+
+```
 ---
 
 ## Configuration
